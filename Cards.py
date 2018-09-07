@@ -1,10 +1,10 @@
 from random import shuffle
 
-cardType = ('Sly Deal', 'Pass Go', 'Wild Card', 'Rent', 'Deal Breaker', 'Money', 'Property', 'Hotel', 'Debt Collector',
-            'House', 'Double The Rent', 'Just Say No', 'Forced Deal', 'It\'s My Birthday')
+#cardType = ('Sly Deal', 'Pass Go', 'Wild Card', 'Rent', 'Deal Breaker', 'Money', 'Property', 'Hotel', 'Debt Collector',
+#            'House', 'Double The Rent', 'Just Say No', 'Forced Deal', 'It\'s My Birthday')
 #print(cardType[4])
 
-colours = ('Brown', 'Cyan', 'Magenta', 'Orange', 'Red', 'Yellow', 'Green', 'Blue', 'Black', 'White', 'ALL')
+#colours = ('Brown', 'Cyan', 'Magenta', 'Orange', 'Red', 'Yellow', 'Green', 'Blue', 'Black', 'White', 'ALL')
 #print(colours[7: 10])
 
 # Colour : (names of properties), value to buy, (rental amount)
