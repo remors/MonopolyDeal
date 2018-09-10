@@ -15,6 +15,28 @@ actions (your turn)
 
 actions (out of turn)
     Pay a player - from your bank pile or property pile
+    Just say no! - negate a request from another player
 
 '''
+
+class Player():
+    playerName = ""
+    position = 0
+    bankCards = []
+    propertyCards = []
+    handCards = []
+
+    def __init__(self):
+        pass
+
+    def addCard(self, card):
+        self.handCards.append(card)
+
+    def showCards(self, cards):
+        for card in cards:
+            print(card)
+
+    def getHand(self):
+        return self.handCards
+
 
