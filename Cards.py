@@ -10,7 +10,7 @@ from random import shuffle
 # Colour : (names of properties), value to buy, (rental amount)
 properties = {'Brown': (("Old Kent Road", "Whitechapel"), 1, (1, 2)),
               'Cyan': (("The Angel Islington", "Euston Road", "Pentonville Road"), 1, (1, 2, 3)),
-              'Magenta': (("Pall Mall", "White Chapel", "Northumberland Avenue"), 2, (1, 2, 4)),
+              'Magenta': (("Pall Mall", "Whitehall", "Northumberland Avenue"), 2, (1, 2, 4)),
               'Orange': (("Vine Street", "Marlborough Street", "Bow Street"), 2, (1, 3, 5)),
               'Red': (("The Strand", "Fleet Street", "Trafalgar Square"), 3, (2, 4, 6)),
               'Yellow': (("Leicester Square", "Coventery Steet", "Piccadilly"), 3, (2, 4, 6,)),
@@ -18,20 +18,6 @@ properties = {'Brown': (("Old Kent Road", "Whitechapel"), 1, (1, 2)),
               'Blue': (("Park Lane", "Mayfair"), 4, (3, 8)),
               'Black': (("Liverpool Street", "Kings Cross", "Maryleborn", "Fenchurch Street"), 2, (1, 2, 3, 4)),
               'White': (("Electric Company", "Water Works"), 2, (1, 2))}
-
-#print(properties['Green'])
-#print(properties['Green'][0])
-#print(properties['Green'][0][2])
-#print(properties['Green'][2])
-#print(properties['Green'][2][2])
-
-#for property in properties:
-    #print(property, properties[property][0][1])
-    #print(property, len(properties[property][0]), properties[property][0][len(properties[property][0])-1])
-
-#for property in properties:
-    #print(property, properties[property][0][1][0])
-
 
 '''
 card is a cardType
@@ -95,4 +81,4 @@ def shuffleCards():
     for position in x:
         shuffledDeck.append(deckCards[position])
 
-    return shuffledDeck;
+    return shuffledDeck
