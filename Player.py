@@ -20,24 +20,68 @@ actions (out of turn) (methods)
 '''
 
 class Player():
-    #attributes
-    playerName = ""
-    position = 0
-    bankCards = []
-    propertyCards = []
-    handCards = []
+    def __init__(self, playerName, position):
+        # attributes
+        self.playerName = playerName
+        self.position = position
+        self.bankCards = []
+        self.propertyCards = []
+        self.handCards = []
 
-    def __init__(self):
-        pass
-
+    # Adds a card to your hand.
+    # Adding to other piles such as property or bank is done by moving a card from the hand to the pile so is a
+    # different method
     def addCard(self, card):
         self.handCards.append(card)
 
-    def showCards(self, cards):
-        for card in cards:
-            print(card)
+    # Displays the cards in a pile. Could be the bank, property or hand.
+    # This is where we'll add the graphics later
+    def showCards(self, cardPile):
+        cardNum = 1
+        for card in cardPile:
+            print("%d) %s" % (cardNum, card))
+            cardNum = cardNum + 1
 
     def getHand(self):
         return self.handCards
+
+    def getBank(self):
+        return self.bankCards
+
+    def getProperties(self):
+        return self.propertyCards
+
+    def getPlayerName(self):
+        return self.playerName
+
+    def getPosition(self):
+        return self.position
+
+    # Tells me who this object is
+    def whoAmi(self):
+        print("I am %s playing position %d" % (self.playerName, self.position))
+
+    # Useful for moving cards between various piles, including from one players pile to another players pile
+    def moveCardBetweenPiles(self, cardNum, fromPile, toPile):
+        toPile.append(fromPile[cardNum])
+        fromPile.remove(fromPile[cardNum])
+
+    # Move a card from my hand to the bank (using the generic moveCardBetweenPiles method
+    def bankCard(self, cardNum):
+        # You can move any card except a property card so check it's not a property card
+        if (self.handCards[cardNum][0][0] == 'Property'):
+            print("Computer says no")
+        else:
+            # Move the card selected from the hand to the bank
+            self.moveCardBetweenPiles(cardNum, self. handCards, self.bankCards)
+
+    def propertyCard(self, cardNum):
+        # You can only move a property card so check it's not something else
+        if (self.handCards[cardNum][0][0] == 'Property'):
+            # Move the card selected from the hand to the bank
+            self.moveCardBetweenPiles(cardNum, self.handCards, self.propertyCards)
+        else:
+            print("Computer says no")
+
 
 
