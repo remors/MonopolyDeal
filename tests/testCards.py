@@ -1,8 +1,8 @@
 from Cards import shuffleCards, properties
 
 shuffledDeck = shuffleCards()
-for card in shuffledDeck:
-    print(card)
+#for card in shuffledDeck:
+#    print(card)
 
 '''
 print(properties)
@@ -20,3 +20,8 @@ for property in properties:
     print(property, properties[property][0][1][0])
     
 '''
+sum=0
+for card in shuffledDeck:
+    print(card[1])
+    sum=card[1]+sum
+print(sum)
