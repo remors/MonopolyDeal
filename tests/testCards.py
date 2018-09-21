@@ -22,6 +22,6 @@ for property in properties:
 '''
 sum=0
 for card in shuffledDeck:
-    print(card[1])
+    #print(card[1])
     sum=card[1]+sum
 print(sum)
