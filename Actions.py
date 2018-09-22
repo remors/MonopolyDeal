@@ -1,5 +1,5 @@
 """
-TODO:
+TODO: Lots!!
 Banking money and moving properties to the property pile are not covered here.
 For properties (and the property pile) wild cards and houses/hotels can be added. This is also not covered here
 Pass go also not covered here
