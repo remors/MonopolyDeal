@@ -82,3 +82,9 @@ def shuffleCards():
         shuffledDeck.append(deckCards[position])
 
     return shuffledDeck
+
+# TODO Mia homework: getRentalValue function needed
+# I still need that function where I pass in a colour and a number of properties and I return the rent that is payable
+# Start of the function done
+def getRentalValue(colour, numOfProperties):
+    return 0
