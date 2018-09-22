@@ -75,6 +75,7 @@ class Player():
             # Move the card selected from the hand to the bank
             self.moveCardBetweenPiles(cardNum, self. handCards, self.bankCards)
 
+    # Move a card from my hand to the property pile (using the generic moveCardBetweenPiles method
     def propertyCard(self, cardNum):
         # You can only move a property card so check it's not something else
         if (self.handCards[cardNum][0][0] == 'Property'):
@@ -83,5 +84,12 @@ class Player():
         else:
             print("Computer says no")
 
+    #TODO Mia homework: I've not tested this, can you test this please?
+    def canISayNo(self):
+        justSayNo = False
+        for card in self.handCards:
+            if card[0][1] == 'Just Say No':
+                justSayNo = True
+        return justSayNo
 
 
