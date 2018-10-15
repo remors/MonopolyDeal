@@ -25,3 +25,5 @@ for card in shuffledDeck:
     #print(card[1])
     sum=card[1]+sum
 print(sum)
+
+print(shuffledDeck)

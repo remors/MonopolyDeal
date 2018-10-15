@@ -4,13 +4,20 @@ import Actions as Actions
 
 simon = Player("Simon", 1)
 mia = Player("Mia",2)
+fred = Player("Fred",3)
+
+
 deckOfCards = shuffleCards();
 simon.whoAmi()
+mia.whoAmi()
+fred.whoAmi()
 
+# TODO - Mia play around with the below commented calls to see what they do
+"""
 for i in range(5):
     simon.addCard(deckOfCards[i])
     mia.addCard(deckOfCards[i+5])
-
+"""
 """
 print("In my hand I have:")
 simon.showCards(simon.getHand())
@@ -31,7 +38,7 @@ simon.showCards(simon.getHand())
 print("In the property pile I have:")
 simon.showCards(simon.getProperties())
 """
-
+"""
 print("In Simon hand I have:")
 simon.showCards(simon.getHand())
 print("In Mia hand I have:")
@@ -42,4 +49,4 @@ print("In Simon hand I have:")
 simon.showCards(simon.getHand())
 print("In Mia hand I have:")
 simon.showCards(mia.getHand())
-
+"""

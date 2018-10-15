@@ -7,7 +7,7 @@ consists of (attributes)
     hand - cards ready to play
 
 actions (your turn) (methods)
-    Take 2 cards
+    Take 2 cards from the shuffled deck
     Take 5 cards if you have zero cards
     Place 0-3 cards (and actions thereof)
     Declare victory!
@@ -60,6 +60,8 @@ class Player():
     # Tells me who this object is
     def whoAmi(self):
         print("I am %s playing position %d" % (self.playerName, self.position))
+
+    # TODO Mia - check out the next few functions and see if you can understand what they are doing. Also worth having aplay around with them in testPlayer
 
     # Useful for moving cards between various piles, including from one players pile to another players pile
     def moveCardBetweenPiles(self, cardNum, fromPile, toPile):
