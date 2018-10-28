@@ -45,9 +45,16 @@ discardPile = []
 """
     THIS WILL BE THE MIDDLE - Where players take it in turns     
 """
-# TODO Mia - write the algorithm in the comments to state what happens in the middle of the game
-
-
+# TODO Mia - write the code that happens in the middle of the game
+'''
+a player will make their move depending on the cards they have in their hand. 
+the next player will have to 'respond' to that move, eg if player1 places a deal breaker player 2 would either give them
+a set, ot 'just say no'
+the cards will be taken out of the hand and either placed onto the table or given to another player or put in the 
+'discard pile'
+might need a new variable called 'tableCards' to state the cards on the table once the player have made their move
+  
+'''
 """
     THIS WILL BE THE END - Where someone declares victory!
 """
