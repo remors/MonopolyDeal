@@ -61,13 +61,12 @@ class Player():
     def whoAmi(self):
         print("I am %s playing position %d" % (self.playerName, self.position))
 
-    # TODO Mia - check out the next few functions and see if you can understand what they are doing. Also worth having aplay around with them in testPlayer
-
     # Useful for moving cards between various piles, including from one players pile to another players pile
     def moveCardBetweenPiles(self, cardNum, fromPile, toPile):
         toPile.append(fromPile[cardNum])
         fromPile.remove(fromPile[cardNum])
 
+    # TODO [3] Mia - We have tested moveCardBetweenPiles. Check out the next two functions and see if you can understand what they are doing. Also worth having aplay around with them in testPlayer
     # Move a card from my hand to the bank (using the generic moveCardBetweenPiles method
     def bankCard(self, cardNum):
         # You can move any card except a property card so check it's not a property card
@@ -86,7 +85,7 @@ class Player():
         else:
             print("Computer says no")
 
-    #TODO Mia homework: I've not tested this, can you test this please?
+    #TODO [4] Mia homework: I've not tested this, can you test this please?
     def canISayNo(self):
         justSayNo = False
         for card in self.handCards:

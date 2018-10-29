@@ -83,8 +83,10 @@ def shuffleCards():
 
     return shuffledDeck
 
-# TODO Mia homework: getRentalValue function needed
+# TODO [2] Mia homework: getRentalValue function needed
 # I still need that function where I pass in a colour and a number of properties and I return the rent that is payable
+# e.g. I have 2 green properties therefore I would have to pay 4 bucks
+# HINT look at testCards, try uncommenting the lines and seeing what it does!
 # Start of the function done
 def getRentalValue(colour, numOfProperties):
     return 0

@@ -47,12 +47,29 @@ discardPile = []
 """
 # TODO Mia - write the code that happens in the middle of the game
 '''
-a player will make their move depending on the cards they have in their hand. 
-the next player will have to 'respond' to that move, eg if player1 places a deal breaker player 2 would either give them
-a set, ot 'just say no'
-the cards will be taken out of the hand and either placed onto the table or given to another player or put in the 
-'discard pile'
-might need a new variable called 'tableCards' to state the cards on the table once the player have made their move
+[STEP 1] The player whose turn it is takes 2 cards from the deck
+The player then makes their move (depending on the cards they have in their hand)
+Move cards could be
+    bank
+    property
+    action
+    
+If an action card is played that involves other player(s) then
+    Is the action for one player? 
+        If so select the player
+            That player has to respond
+    Or ALL players?
+        ALL players in turn (hint loop) have to respond
+
+Player responses could be:
+    just say no
+    hand over money
+    hand over properties (for actions which are steals or as monetary values)
+
+Cards at this point move from one player(s) to the player whose go it is
+Depending on the card played, it could go into the discard pile on the table
+
+Play then moves onto next player and go back to [STEP 1] 
   
 '''
 """
